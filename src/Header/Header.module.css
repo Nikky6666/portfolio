@@ -1,0 +1,22 @@
+.header {
+    height: 70px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.container {
+    border: 1px solid;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    width: 360px;
+    justify-content: space-between;
+}

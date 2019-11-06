@@ -1,0 +1,6 @@
+
+.navMenu {
+    display: flex;
+    width: 360px;
+    justify-content: space-between;
+}
