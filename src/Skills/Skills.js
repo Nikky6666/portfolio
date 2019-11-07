@@ -4,11 +4,11 @@ import styles from './Skills.module.css';
 function Skill(props) {
     return <div className={styles.skill}>
         <div className={styles.photo}>
-            <img src=""/>
+            <img src={props.photo}/>
         </div>
-        <h2>Название навыка</h2>
+        <h2>{props.name}</h2>
         <div>
-            Подробное описание навыка
+            {props.desctiption}
         </div>
     </div>
 }
@@ -21,9 +21,9 @@ function Skills() {
                     <h2>Мои скиллы</h2>
                 </div>
                 <div className={styles.blockSkills}>
-                    <Skill/>
-                    <Skill/>
-                    <Skill/>
+                    <Skill photo="" name="Name skill" desctiption="description of skill"/>
+                    <Skill photo="" name="Name skill" desctiption="description of skill"/>
+                    <Skill photo="" name="Name skill" desctiption="description of skill"/>
                 </div>
             </div>
         </div>

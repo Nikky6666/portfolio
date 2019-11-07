@@ -1,4 +1,21 @@
 .contacts {
     height: 100vh;
-    background-color: #b5a8ff;
+    background-color: #010051;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+}
+
+.header h2 {
+    color: white;
 }

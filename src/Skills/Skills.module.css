@@ -1,6 +1,6 @@
 .skills {
     height: 100vh;
-    background-color: #93ff7c;
+    background-color: #474680;
     display: flex;
     justify-content: center;
 }
@@ -15,26 +15,30 @@
 }
 
 .header {
-    border: 1px solid;
+    border: 1px solid black;
     height: 150px;
+    color: #de1508;
+
 }
 
 .photo img {
     width: 150px;
     height: 150px;
-    background-color: #cc9dff;
+    background-color: #696969;
 }
 
 .blockSkills {
     display: flex;
     justify-content: space-between;
+    /*flex-wrap: wrap;*/
 }
 
 .skill {
-    border: 1px solid;
+    border: 1px solid black;
     width: 250px;
     height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: white;
 }

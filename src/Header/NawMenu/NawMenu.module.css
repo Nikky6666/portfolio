@@ -3,4 +3,9 @@
     display: flex;
     width: 360px;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link {
+    color: red;
 }

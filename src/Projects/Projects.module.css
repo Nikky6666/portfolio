@@ -1,4 +1,48 @@
 .projects {
     height: 100vh;
-    background-color: #cc9dff;
+    background-color:#010051;
+    /*background-color: #cc9dff;*/
+    display: flex;
+    justify-content: center;
 }
+
+.container {
+    width: 80%;
+    align-items: stretch;
+    text-align: center;
+    display: flex;
+    border: 1px solid;
+    flex-direction: column;
+}
+
+.header {
+    border: 1px solid black;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #de1508;
+}
+
+.blockProjects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    width: 35%;
+    color: white;
+}
+
+.project img {
+    width: 30vh;
+    height: 30vh;
+    background-color: #696969;
+}
+
+

@@ -1,6 +1,6 @@
 .main {
     height: 100vh;
-    background-color: #ffe185;
+    background-color: #010051;
     display: flex;
     justify-content: center;
 }
@@ -11,15 +11,17 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 .greeting{
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 .photo {
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 300px;
     background-color: dimgray;
 }
 
