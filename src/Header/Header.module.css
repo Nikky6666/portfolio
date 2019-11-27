@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
 
-
 }
 
 .container {
@@ -15,8 +14,8 @@
     align-items: center;
 }
 
-.nav {
-    display: flex;
-    width: 360px;
-    justify-content: space-between;
-}
+/*.nav {*/
+/*    display: flex;*/
+/*    width: 360px;*/
+/*    justify-content: space-between;*/
+/*}*/

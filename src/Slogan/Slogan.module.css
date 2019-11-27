@@ -15,3 +15,7 @@
     justify-content: space-between;
     height: 60%;
 }
+
+.container h2 {
+    text-align: center;
+}

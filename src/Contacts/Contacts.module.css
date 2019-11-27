@@ -1,5 +1,5 @@
 .contacts {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #010051;
     display: flex;
     justify-content: center;
@@ -9,11 +9,11 @@
 .container {
     display: flex;
     width: 80%;
-    height: 80%;
-    justify-content: space-between;
+    min-height: 80vh;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    border: 1px solid;
+    border: 1px solid white;
 }
 
 .header h2 {

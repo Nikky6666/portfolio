@@ -2,11 +2,27 @@ form{
     display: flex;
     flex-direction: column;
     width: 50%;
+    min-width: 260px;
     height: 50%;
-    border: 1px solid;
+    margin: 20px;
+    border: 1px solid #ffaeae;
     justify-content: space-between;
 }
 
 textarea {
+    min-height: 100px;
     height: 50%;
+    margin: 5px;
+    border-radius: 15px;
+    resize: none;
+    outline: none;
+}
+
+input{
+    margin: 5px;
+    height: 30px;
+    min-width: 100px;
+    border-radius: 15px;
+    resize: none;
+    outline: none;
 }

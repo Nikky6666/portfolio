@@ -10,9 +10,9 @@ function Input(props) {
 function Form() {
     return (
         <form>
-            <Input placeholder="Name"/>
-            <Input placeholder="E-mail"/>
-            <textarea placeholder="Your message"></textarea>
+            <Input placeholder="   Name"/>
+            <Input placeholder="   E-mail"/>
+            <textarea placeholder=" Your message..."></textarea>
         </form>
 
     );

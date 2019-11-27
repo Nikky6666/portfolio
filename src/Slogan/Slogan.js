@@ -7,6 +7,7 @@ function Slogan() {
   return (
      <div className={styles.slogan}>
         <div className={styles.container}>
+
         <h2>I Am Available For Freelancer</h2>
         <Button name="HIRE ME"/>
      </div>

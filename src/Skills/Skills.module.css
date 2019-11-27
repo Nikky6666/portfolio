@@ -1,5 +1,5 @@
 .skills {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #474680;
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@
 
 .header {
     border: 1px solid black;
-    height: 150px;
+    height: 100px;
     color: #de1508;
 
 }
@@ -29,16 +29,20 @@
 
 .blockSkills {
     display: flex;
-    justify-content: space-between;
-    /*flex-wrap: wrap;*/
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 80%;
+
 }
 
 .skill {
     border: 1px solid black;
-    width: 250px;
-    height: 350px;
+    min-width: 230px;
+    min-height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: white;
+    margin: 20px;
 }
