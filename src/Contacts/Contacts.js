@@ -1,18 +1,17 @@
 import React from 'react';
 import styles from './Contacts.module.css';
-import Button from "../Decoration/Button";
+import Button from "../Common/Button/Button";
 import Form from "./Form/Form";
+import HeaderTitle from "../Common/HeaderTitle/HeaderTitle";
 
 
 function Contacts() {
   return (
      <div className={styles.contacts}>
         <div className={styles.container}>
-        <div className={styles.header}>
-            <h2>Contacts</h2>
-        </div>
+        <HeaderTitle headerName="Контакты" theme="dark"/>
         <Form/>
-         <Button name="Submut"/>
+        <Button name="Отправить" theme="dark"/>
         </div>
      </div>
 

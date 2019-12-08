@@ -1,21 +1,18 @@
 .header {
-    height: 70px;
-    background-color: #E1E1E1;
+    min-height: 50px;
+    background-color: rgba(255, 190, 248, 0.88);
     display: flex;
     justify-content: center;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
 
 }
 
 .container {
-    border: 1px solid;
+    /*border: 1px solid black;*/
     width: 80%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-
-/*.nav {*/
-/*    display: flex;*/
-/*    width: 360px;*/
-/*    justify-content: space-between;*/
-/*}*/

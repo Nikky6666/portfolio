@@ -1,21 +1,22 @@
 form{
     display: flex;
     flex-direction: column;
-    width: 50%;
-    min-width: 260px;
+    width: 60%;
     height: 50%;
     margin: 20px;
-    border: 1px solid #ffaeae;
+ /*   border: 1px solid #ffaeae;*/
     justify-content: space-between;
+
 }
 
 textarea {
-    min-height: 100px;
-    height: 50%;
+    height: 90px;
     margin: 5px;
     border-radius: 15px;
     resize: none;
     outline: none;
+    padding: 15px;
+    font-size: 16px;
 }
 
 input{
@@ -25,4 +26,12 @@ input{
     border-radius: 15px;
     resize: none;
     outline: none;
+    padding:  0px 15px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 740px ) {
+    form {
+        width: 85%;
+    }
 }

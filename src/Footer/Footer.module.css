@@ -1,31 +1,46 @@
 .footer {
-    height: 300px;
-    background-color: #474680;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    composes: background from "../App.css";
+    min-height: 300px;
+    background-color: #ffe2ea;
+}
+
+.header {
+    color: #404040;
+}
+
+.copyright{
+    color: #404040;
+    text-align: center;
 }
 
 .container {
-    border: 1px solid white;
-    width: 80%;
-    min-height: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/*    border: 1px solid black;*/
+    composes: container from "../App.css";
+    height: 90%;
     justify-content: space-between;
 }
 
 .socialNetworks {
     display: flex;
-    width: 65%;
+    width: 75%;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin: 20px;
 }
 
 .myPage img {
-    width: 60px;
-    height: 60px;
-    background-color: #696969;
+    width: 100px;
+    height: 100px;
     margin: 10px;
+
+}
+
+
+
+@media screen and (max-width: 500px ) {
+    .myPage img {
+        width: 60px;
+        height: 60px;
+    }
+
 }

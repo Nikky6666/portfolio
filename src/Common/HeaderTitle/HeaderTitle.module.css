@@ -1,0 +1,47 @@
+.header {
+    /*  border: 1px solid black;*/
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 10px;
+    font-size: 30px;
+    margin: 30px 0 0 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 5px;
+}
+
+.line{
+    height: 3px;
+    width: 60px;
+    margin: 30px 0;
+    border-radius: 3px;
+
+}
+
+.light.header{
+    color: #404040;
+}
+
+.light .line{
+    background-color: #010051;
+}
+
+.dark .line{
+    background-color: #ff7fc0;
+}
+
+.dark.header{
+    color: #DEABD4;
+}
+
+@media screen and (max-width: 425px ) {
+    .header{
+        min-height: 220px;
+    }
+}

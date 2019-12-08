@@ -1,21 +1,13 @@
 .contacts {
-    min-height: 100vh;
-    background-color: #010051;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    composes: background from "../App.css";
 }
 
 .container {
-    display: flex;
-    width: 80%;
-    min-height: 80vh;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid white;
+    composes: container from "../App.css";
+    margin: 60px 0;
+   /* border: 1px solid white;*/
 }
 
 .header h2 {
-    color: white;
+    color: #DEABD4;
 }

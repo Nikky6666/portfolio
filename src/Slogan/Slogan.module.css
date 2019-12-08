@@ -1,21 +1,17 @@
 .slogan {
-    height: 250px;
-    background-color: #E1E1E1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    composes: background from "../App.css";
+    min-height: 350px;
+    background-color: #ffe2ea;
 }
 
 .container{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 80%;
-    border: 1px solid;
+    composes: container from "../App.css";
+    /*border: 1px solid black;*/
     justify-content: space-between;
-    height: 60%;
+    height: 70%;
 }
 
 .container h2 {
     text-align: center;
+    color: #404040
 }

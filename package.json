@@ -2,8 +2,9 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://Nikky6666.github.io/portfolio",
+  "homepage": "https://Nikky6666.github.io/portfolio",
   "dependencies": {
+    "@babel/runtime": "^7.7.6",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0"
@@ -30,5 +31,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "csscomb": "^4.3.0"
   }
 }
