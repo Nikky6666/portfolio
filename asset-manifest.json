@@ -1,24 +1,30 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.99264707.chunk.css",
-    "main.js": "/portfolio/static/js/main.f55d74fe.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f55d74fe.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.119d7647.chunk.css",
+    "main.js": "/portfolio/static/js/main.175669fa.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.175669fa.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.e92c632a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.e92c632a.js.map",
-    "static/js/2.b5420ef6.chunk.js": "/portfolio/static/js/2.b5420ef6.chunk.js",
-    "static/js/2.b5420ef6.chunk.js.map": "/portfolio/static/js/2.b5420ef6.chunk.js.map",
+    "static/js/2.be857c0d.chunk.js": "/portfolio/static/js/2.be857c0d.chunk.js",
+    "static/js/2.be857c0d.chunk.js.map": "/portfolio/static/js/2.be857c0d.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.0772a91acc36afdd912e3b637ee3b510.js": "/portfolio/precache-manifest.0772a91acc36afdd912e3b637ee3b510.js",
+    "precache-manifest.ca14cf56964ee09c93520c63b99cd7e1.js": "/portfolio/precache-manifest.ca14cf56964ee09c93520c63b99cd7e1.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.99264707.chunk.css.map": "/portfolio/static/css/main.99264707.chunk.css.map",
+    "static/css/main.119d7647.chunk.css.map": "/portfolio/static/css/main.119d7647.chunk.css.map",
+    "static/media/facebook.png": "/portfolio/static/media/facebook.3a43b6c9.png",
     "static/media/htmlCss.png": "/portfolio/static/media/htmlCss.6afb964c.png",
     "static/media/js.png": "/portfolio/static/media/js.20afd18e.png",
-    "static/media/react.png": "/portfolio/static/media/react.5cae234e.png"
+    "static/media/projectToDoList.png": "/portfolio/static/media/projectToDoList.4517ed92.png",
+    "static/media/projectWebSite.png": "/portfolio/static/media/projectWebSite.e27a3836.png",
+    "static/media/react.png": "/portfolio/static/media/react.5cae234e.png",
+    "static/media/telegram.png": "/portfolio/static/media/telegram.021bc91e.png",
+    "static/media/twitter.png": "/portfolio/static/media/twitter.d678c2ba.png",
+    "static/media/vk.png": "/portfolio/static/media/vk.3fd0643a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e92c632a.js",
-    "static/js/2.b5420ef6.chunk.js",
-    "static/css/main.99264707.chunk.css",
-    "static/js/main.f55d74fe.chunk.js"
+    "static/js/2.be857c0d.chunk.js",
+    "static/css/main.119d7647.chunk.css",
+    "static/js/main.175669fa.chunk.js"
   ]
 }
