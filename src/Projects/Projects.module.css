@@ -1,10 +1,8 @@
-.projects
-{
+.projects {
     composes: background from '../App.css';
 }
 
-.container
-{
+.container {
     flex-wrap: wrap;
     justify-content: center;
 
@@ -14,8 +12,7 @@
     /*    border: 1px solid black;*/
 }
 
-.header
-{
+.header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,8 +23,7 @@
     color: #deabd4;
 }
 
-.blockProjects
-{
+.blockProjects {
     display: flex;
     align-items: center;
     /* border: 1px solid #ffffff;*/
@@ -39,8 +35,7 @@
 }
 
 
-.project
-{
+.project {
     /*   border: 1px solid black;*/
     display: flex;
     align-items: center;
@@ -50,23 +45,24 @@
     width: 380px;
     min-height: 360px;
     margin: 20px;
+    margin-bottom: 35px;
 
     color: white;
+
+
     /*    background-color: rgba(1, 0, 127, 0.71);*/
 }
 
-.project h2
-{
+.project h2 {
     color: #deabd4;
+    font-size: 25px;
 }
 
-.button
-{
-    opacity: .8;
+.button {
+    position: relative;
 }
 
-.project .image
-{
+.project .image {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,51 +73,48 @@
 
     border-radius: 15px;
     background-color: #696969;
-}
-.imgWeb
-{
-    background-image: url('../Common/Photo/projectWebSite.png');
-}
-.imgCoun
-{
-    background-image: url('../Common/Photo/projectCounter.png');
-}
-.impTDL
-{
-    background-image: url('../Common/Photo/projectToDoList.png');
+    background-position: center;
+    background-size: 250px;
+    position: relative;
 }
 
-.description
-{
+.image:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #ffd8f9;
+    border-radius: 15px;
+    opacity: 0.6;
+}
+
+.description {
     padding: 15px;
+    font-size: 18px;
 }
 
-@media screen and (max-width: 700px )
-{
-    .blockProjects
-    {
+@media screen and (max-width: 700px ) {
+    .blockProjects {
         justify-content: space-evenly;
     }
-    .project .image
-    {
+
+    .project .image {
         width: 180px;
         height: 180px;
     }
 }
 
-@media screen and (max-width: 400px )
-{
-    .project .image
-    {
-        width: 140px;
-        height: 140px;
+@media screen and (max-width: 400px ) {
+    .project .image {
+        width: 150px;
+        height: 150px;
     }
 }
 
-@media screen and (max-width: 430px )
-{
-    .project
-    {
+@media screen and (max-width: 430px ) {
+    .project {
         width: 250px;
         min-height: 300px;
     }

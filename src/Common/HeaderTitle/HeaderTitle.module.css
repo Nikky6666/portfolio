@@ -45,3 +45,14 @@ h2 {
         min-height: 220px;
     }
 }
+
+@media screen and (max-width: 614px ) {
+    .header{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 390px ) {
+    .header{
+        font-size: 15px;
+    }
+}

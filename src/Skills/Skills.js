@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Skills.module.css';
 import HeaderTitle from "../Common/HeaderTitle/HeaderTitle";
-import reactPhoto from "../Common/Photo/react.png"
-import jsPhoto from "../Common/Photo/js.png"
-import htmlCss from "../Common/Photo/htmlCss.png"
+import reactPhoto from "../assets/Photo/react.png"
+import jsPhoto from "../assets/Photo/js.png"
+import htmlCss from "../assets/Photo/htmlCss.png"
 
 function Skill(props) {
     return <div className={styles.skill}>

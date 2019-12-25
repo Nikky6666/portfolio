@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Footer.module.css';
-import vk from '../Common/Photo/vk.png'
-import facebook from '../Common/Photo/facebook.png'
-import twitter from '../Common/Photo/twitter.png'
-import telegram from '../Common/Photo/telegram.png'
+import vk from '../assets/Photo/vk.png'
+import facebook from '../assets/Photo/facebook.png'
+import twitter from '../assets/Photo/twitter.png'
+import telegram from '../assets/Photo/telegram.png'
 
 
 class SocialNetwork extends React.Component{
@@ -31,7 +31,7 @@ function Footer() {
                 <SocialNetwork site={telegram} link="https://t.me/IcE_2460" />
             </div>
             <div className={styles.copyright}>
-                © 2019 beingeorge, All Rights Reserved.
+                © 2019 Все права защищены.
             </div>
         </div>
      </div>

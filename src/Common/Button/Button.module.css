@@ -6,14 +6,16 @@ button {
     border: 3px solid #646464;
     font-size: 20px;
     font-family: 'Marmelad', sans-serif;
+    cursor: pointer;
 }
 
 .button{
     margin: 20px;
+
 }
 
 .light  {
-    background-color: #9b7d90;
+    background-color: #77435a;
     color: white;
 }
 

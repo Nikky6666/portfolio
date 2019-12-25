@@ -59,6 +59,7 @@ h1{
     width: 250px;
     height: 300px;
     background-color: dimgray;
+    border-radius: 10px;
 }
 
 .photo .image:before{
@@ -70,11 +71,22 @@ h1{
     left: 15px;
     top: -20px;
     z-index: -1;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 654px ) {
     .greeting span:nth-child(2) span:before{
         width: 140%;
         left: -62px;
+    }
+}
+@media screen and (max-width: 400px ) {
+    .photo .image:before{
+        left: -25px;
+    }
+    .image{
+        width: 240px;
+        height: 290px;
+        background-color: dimgray;
     }
 }
