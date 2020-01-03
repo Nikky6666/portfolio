@@ -10,6 +10,59 @@
     font-size: 30px;
     margin: 30px 0 0 0;
     padding: 0;
+    position: relative;
+}
+
+.animation{
+    position: absolute;
+}
+.header .animation:nth-child(1){
+    left: -60px;
+}
+
+.header .animation:nth-child(2){
+    right: -60px;
+}
+.animation>div{
+    width: 30px;
+    height: 30px;
+    margin: 6px;
+    border-radius: 15px;
+    background-color: #131112;
+}
+@keyframes animLeftRight {
+    0%{
+        transform: translateX(30px) scale(2);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(-30px);
+        opacity: 0.5;
+    }
+}
+
+@keyframes animRightLeft {
+    0%{
+        transform: translateX(-60px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(30px) scale(2);
+        opacity: 0.5;
+
+    }
+}
+
+.animation .d1{
+    animation: animLeftRight 3s alternate ease infinite;
+    background: linear-gradient(pink, blue);
+}
+.animation .d2{
+    background: linear-gradient(#b44bff, #3d3cff);
+}
+
+.animation .d2 {
+    animation: animRightLeft  3s alternate ease infinite;
 }
 
 h2 {
@@ -23,6 +76,7 @@ h2 {
     border-radius: 3px;
 
 }
+
 
 .light.header{
     color: #404040;
@@ -40,7 +94,7 @@ h2 {
     color: #DEABD4;
 }
 
-@media screen and (max-width: 425px ) {
+@media screen and (max-width: 521px ) {
     .header{
         min-height: 220px;
     }
@@ -50,9 +104,53 @@ h2 {
     .header{
         font-size: 25px;
     }
+    .header .animation:nth-child(1){
+        padding-bottom: 50px;
+    }
 }
 @media screen and (max-width: 390px ) {
     .header{
         font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 880px ) {
+    .header .animation:nth-child(1){
+        top: -10px;
+        left: inherit;
+    }
+
+    .header .animation:nth-child(2){
+        bottom: -10px;
+        right: inherit;
+    }
+    .animation{
+        display: flex;
+    }
+    .animation .d1{
+        animation: animUpDown 2s alternate ease infinite;
+    }
+    .animation .d2{
+        animation: animDownUp 2s alternate ease infinite;
+    }
+
+
+    @keyframes animUpDown {
+        0%{
+            transform: translateY(-25px);
+        }
+        100%{
+            transform: translateY(5px) scale(0.5);
+        }
+    }
+
+    @keyframes animDownUp {
+        0%{
+            transform: translateY(5px) scale(0.5);
+        }
+        100%{
+            transform: translateY(-25px);
+        }
     }
 }

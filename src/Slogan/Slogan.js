@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Slogan.module.css';
-import Button from "../Common/Button/Button";
+import BigButton from "../Common/Buttons/BigButton";
 import HeaderTitle from "../Common/HeaderTitle/HeaderTitle";
 
 
@@ -8,8 +8,8 @@ function Slogan() {
   return (
      <div className={styles.slogan}>
         <div className={styles.container}>
-        <HeaderTitle headerName="Рассматриваю варианты удаленной работы" theme="light"/>
-        <Button name="Нанять меня" theme="light"/>
+        <HeaderTitle headerName="Рассматриваю варианты удаленной работы" theme="light" display={"hide"}/>
+        <BigButton name="Нанять меня"/>
      </div>
      </div>
 

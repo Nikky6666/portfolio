@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Contacts.module.css';
-import Button from "../Common/Button/Button";
+import BigButton from "../Common/Buttons/BigButton";
 import Form from "./Form/Form";
 import HeaderTitle from "../Common/HeaderTitle/HeaderTitle";
 
@@ -11,7 +11,7 @@ function Contacts() {
         <div className={styles.container}>
         <HeaderTitle headerName="Контакты" theme="dark"/>
         <Form/>
-        <Button name="Отправить" theme="dark"/>
+        <BigButton name="Отправить"/>
         </div>
      </div>
 

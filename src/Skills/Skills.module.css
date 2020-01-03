@@ -7,13 +7,41 @@
   /*  border: 1px solid black;*/
     composes: container from "../App.css";
     text-align: center;
+
 }
 
 
 .photo img {
     width: 200px;
     height: 200px;
+    transition: transform 2s ease, opacity 1s ease;
+    opacity: 0.5;
 }
+
+.photo img:hover{
+    opacity: 1;
+}
+
+.react img:hover{
+    transform: rotate(360deg);
+}
+
+@keyframes anim {
+    0%{transform: scaleX(1);}
+    50%{transform: scaleX(-1);}
+    100%{transform: scaleX(1)}
+}
+
+.js, .html{
+    transition: transform 2s ease;
+    width:300px;
+    height: 200px;
+}
+
+.js:hover, .html:hover{
+    animation: anim 3s ease;
+}
+
 .photo{
     padding: 15px;
 }
@@ -34,6 +62,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     color: #404040;
     margin:  0 15px 40px 15px;
     /*background-color: #eed2d9;*/
@@ -43,12 +72,24 @@
     padding: 15px;
     text-align: center;
     font-size: 16px;
+    transition: all 1s;
+}
+.description:hover{
+    color: #131112;
+    background-color: rgba(166, 0, 255, 0.35);
+    border-radius: 60px;
+
 }
 
 .skill h2{
-    font-size: 25px;
+    font-size: 30px;
     letter-spacing: 2px;
+    transition: all 1s ease;
 
+}
+.skill h2:hover{
+    color: #131112;
+    text-shadow: 15px 20px 5px black, -15px -20px 5px #310c57;
 }
 
 @media screen and (max-width: 700px ) {
@@ -70,6 +111,18 @@
     .photo img {
         height: 120px;
         width: 120px;
+    }
+
+}
+@media screen and (max-width: 800px){
+    .container{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .photo img{
+        opacity: 1;
     }
 
 }

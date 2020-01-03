@@ -8,7 +8,8 @@
     composes: container from "../App.css";
     /*border: 1px solid black;*/
     justify-content: space-between;
-    height: 70%;
+    height: 80%;
+    margin: 50px 0;
 }
 
 .container h2 {

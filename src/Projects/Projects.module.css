@@ -56,6 +56,11 @@
 .project h2 {
     color: #deabd4;
     font-size: 25px;
+    transition: all 1s;
+}
+.project h2:hover{
+    text-shadow: -65px 25px 5px palegoldenrod, 65px -25px 5px lightblue;
+    color: white;
 }
 
 .button {
@@ -93,11 +98,22 @@
 .description {
     padding: 15px;
     font-size: 18px;
+    transition: all 1s;
+    color: #deabd4;
+}
+
+.description:hover{
+    color: #ffecff;
+    background-color: rgba(255, 235, 244, 0.28);
+    border-radius: 60px;
 }
 
 @media screen and (max-width: 700px ) {
     .blockProjects {
         justify-content: space-evenly;
+    }
+    .container{
+        margin-top: 50px;
     }
 
     .project .image {

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './NawMenu.module.css';
 
 function ButtonOfMenu (props) {
-    return   <a href="" className={styles.link}>{props.name}</a>
+    return   <div className={styles.link}><a href="" >{props.name}</a></div>
 }
 
 function NawMenu() {

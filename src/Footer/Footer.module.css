@@ -7,6 +7,14 @@
 .header {
     color: #404040;
 }
+.header h2{
+    transition: all 1s;
+}
+.header h2:hover{
+    text-shadow: 35px 25px 5px darkblue, -35px -25px 5px #a256ff;
+    color: #131112;
+}
+
 
 .copyright{
     color: #404040;
@@ -33,7 +41,12 @@
     width: 100px;
     height: 100px;
     margin: 10px;
+    border-radius: 50px;
+}
 
+.myPage img:hover{
+    box-shadow: inset 0 0 20px 10px  #63d4eb, 0 0 40px 15px #63d4eb;
+    cursor: url("../assets/Photo/cursorPointer.png"), auto;
 }
 
 

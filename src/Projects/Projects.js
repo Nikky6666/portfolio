@@ -1,17 +1,18 @@
 import React from 'react';
 import styles from './Projects.module.css';
 import HeaderTitle from "../Common/HeaderTitle/HeaderTitle";
-import Button from "../Common/Button/Button";
+import BigButton from "../Common/Buttons/BigButton";
 import photoWebSite from "../assets/Photo/projectWebSite.png"
 import photoCounter from "../assets/Photo/projectCounter.png"
 import photoToDoList from "../assets/Photo/projectToDoList.png"
+import SmallButton from "../Common/Buttons/SmallButton";
 
 function Project(props) {
     return (
         <div className={styles.project}>
             <div className={`${styles.image}`} style={{backgroundImage: `url(${props.project.image})`}}>
                 <div className={styles.button}>
-                <Button name="Смотреть" theme="light"/>
+                <SmallButton name="Смотреть" theme="light"/>
                 </div>
             </div>
             <h2>{props.project.name}</h2>
