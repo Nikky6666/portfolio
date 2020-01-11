@@ -13,6 +13,9 @@ textarea {
     height: 90px;
 }
 
+input::placeholder, textarea::placeholder{
+    color: #e1e1e1;
+}
 
 input{
     height: 30px;

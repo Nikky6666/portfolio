@@ -1,11 +1,13 @@
 .skills {
     composes: background from "../App.css";
     background-color: #ffe2ea;
+    position: relative;
 }
 
 .container {
   /*  border: 1px solid black;*/
     composes: container from "../App.css";
+    margin-top: 30px;
     text-align: center;
 
 }

@@ -6,7 +6,7 @@ import HeaderTitle from "../Common/HeaderTitle/HeaderTitle";
 
 function Slogan() {
   return (
-     <div className={styles.slogan}>
+     <div id="slogan" className={styles.slogan}>
         <div className={styles.container}>
         <HeaderTitle headerName="Рассматриваю варианты удаленной работы" theme="light" display={"hide"}/>
         <BigButton name="Нанять меня"/>

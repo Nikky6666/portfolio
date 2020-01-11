@@ -4,6 +4,7 @@ import vk from '../assets/Photo/vk.png'
 import facebook from '../assets/Photo/facebook.png'
 import twitter from '../assets/Photo/twitter.png'
 import telegram from '../assets/Photo/telegram.png'
+import Fade from 'react-reveal/Slide';
 
 
 class SocialNetwork extends React.Component{
@@ -11,7 +12,7 @@ class SocialNetwork extends React.Component{
         return(
             <div className={styles.myPage}>
                 <a href={this.props.link}>
-                    <img src={this.props.site}/>
+                    <img src={this.props.site} alt=""/>
                 </a>
             </div>
         )
@@ -22,6 +23,7 @@ class SocialNetwork extends React.Component{
 function Footer() {
   return (
      <div className={styles.footer}>
+         <Fade bottom>
         <div className={styles.container}>
         <div className={styles.header}><h2>Nikky</h2></div>
             <div className={styles.socialNetworks}>
@@ -34,6 +36,7 @@ function Footer() {
                 © 2019 Все права защищены.
             </div>
         </div>
+         </Fade>
      </div>
 
   );

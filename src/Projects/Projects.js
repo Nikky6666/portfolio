@@ -1,20 +1,20 @@
 import React from 'react';
 import styles from './Projects.module.css';
 import HeaderTitle from "../Common/HeaderTitle/HeaderTitle";
-import BigButton from "../Common/Buttons/BigButton";
 import photoWebSite from "../assets/Photo/projectWebSite.png"
 import photoCounter from "../assets/Photo/projectCounter.png"
 import photoToDoList from "../assets/Photo/projectToDoList.png"
-import SmallButton from "../Common/Buttons/SmallButton";
+import Fade from 'react-reveal/Slide';
 
 function Project(props) {
     return (
         <div className={styles.project}>
-            <div className={`${styles.image}`} style={{backgroundImage: `url(${props.project.image})`}}>
-                <div className={styles.button}>
-                <SmallButton name="Смотреть" theme="light"/>
+            <a href={props.link}>
+                <div className={styles.imageWrapper}>
+                    <div className={`${styles.image}`} style={{backgroundImage: `url(${props.project.image})`}}>
+                    </div>
                 </div>
-            </div>
+            </a>
             <h2>{props.project.name}</h2>
             <div className={styles.description}>
                 {props.project.description}
@@ -25,18 +25,39 @@ function Project(props) {
 
 function Projects() {
     const projects = [
-        {name: "Web-site", image: photoWebSite, description: "Description", style: styles.imgWeb},
-        {name: "To do list", image: photoToDoList, description: "Description", style: styles.impTDL},
-        {name: "Counter", image: photoCounter, description: "Description", style: styles.imgCoun},
+        {
+            name: "Web-site",
+            image: photoWebSite,
+            description: "Социальная сеть. Зарегистрируйся с друзьями и весело проводи время",
+            style: styles.imgWeb,
+            link: "https://nikky6666.github.io/Web-site/"
+        },
+        {
+            name: "To do list",
+            image: photoToDoList,
+            description: "Todolist — это простой список дел или список задач. Запиши в него все свои важные дела, чтобы не забыть. «Список дел» " +
+                "позволит вам эффективно организовать свое рабочее время.",
+            style: styles.impTDL,
+            link: "https://nikky6666.github.io/toDoList/"
+        },
+        {
+            name: "Counter",
+            image: photoCounter,
+            description: "Простой счетчик, в котором вы можете задать свои начальные значения.",
+            style: styles.imgCoun,
+            link: "https://nikky6666.github.io/Counter/"
+        },
     ];
-    const projectsElements = projects.map(p => <Project project={p}/>)
+    const projectsElements = projects.map(p => <Project project={p}/>);
     return (
-        <div className={styles.projects}>
+        <div id="projects" className={styles.projects}>
             <div className={styles.container}>
                 <HeaderTitle headerName="Проекты" theme="dark"/>
-                <div className={styles.blockProjects}>
-                    {projectsElements}
-                </div>
+                <Fade bottom>
+                    <div className={styles.blockProjects}>
+                        {projectsElements}
+                    </div>
+                </Fade>
             </div>
         </div>
 

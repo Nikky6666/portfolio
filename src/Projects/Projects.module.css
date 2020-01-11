@@ -1,11 +1,12 @@
 .projects {
     composes: background from '../App.css';
+    position: relative;
 }
 
 .container {
     flex-wrap: wrap;
     justify-content: center;
-
+    margin-top: 30px;
     text-align: center;
 
     composes: container from '../App.css';
@@ -25,7 +26,6 @@
 
 .blockProjects {
     display: flex;
-    align-items: center;
     /* border: 1px solid #ffffff;*/
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -62,38 +62,43 @@
     text-shadow: -65px 25px 5px palegoldenrod, 65px -25px 5px lightblue;
     color: white;
 }
-
-.button {
-    position: relative;
-}
-
-.project .image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.imageWrapper{
+  /*  border: 5px solid red;*/
     width: 250px;
     height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
     margin: 15px;
+}
+
+.button {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    z-index: 9;
+}
+
+.image:hover{
+    filter: blur(3px) brightness(0.5);
+    transform: scale(1.3);
+    box-shadow: inset 30px 30px 100px black;
+}
+.image:hover .button{
+    filter: none;
+}
+.project .image {
+    width: 100%;
+    height: 100%;
 
     border-radius: 15px;
     background-color: #696969;
     background-position: center;
     background-size: 250px;
-    position: relative;
+    transition: all 1s;
 }
 
-.image:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    background-color: #ffd8f9;
-    border-radius: 15px;
-    opacity: 0.6;
-}
+
 
 .description {
     padding: 15px;
@@ -116,14 +121,14 @@
         margin-top: 50px;
     }
 
-    .project .image {
+    .project .imageWrapper {
         width: 180px;
         height: 180px;
     }
 }
 
 @media screen and (max-width: 400px ) {
-    .project .image {
+    .project .imageWrapper {
         width: 150px;
         height: 150px;
     }

@@ -1,5 +1,6 @@
 .slogan {
     composes: background from "../App.css";
+    position: relative;
     min-height: 350px;
     background-color: #ffe2ea;
 }

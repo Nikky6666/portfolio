@@ -2,6 +2,7 @@
     composes: background from "../App.css";
     min-height: 300px;
     background-color: #ffe2ea;
+    position: relative;
 }
 
 .header {
@@ -42,10 +43,12 @@
     height: 100px;
     margin: 10px;
     border-radius: 50px;
+    transition: all 0.5s;
 }
 
 .myPage img:hover{
-    box-shadow: inset 0 0 20px 10px  #63d4eb, 0 0 40px 15px #63d4eb;
+    transform: scale(1.30);
+    box-shadow: 0 0 40px 15px #0005eb;
     cursor: url("../assets/Photo/cursorPointer.png"), auto;
 }
 

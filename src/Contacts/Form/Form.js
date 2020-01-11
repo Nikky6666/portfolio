@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './Form.module.css';
+import './Form.module.css';
+import Fade from 'react-reveal/Slide';
 
 function Input(props) {
     return (
@@ -9,12 +10,13 @@ function Input(props) {
 
 function Form() {
     return (
+        <Fade bottom>
         <form>
             <Input placeholder="   ФИО"/>
             <Input placeholder="   E-mail"/>
-            <textarea placeholder=" Ваше сообщение..."></textarea>
+            <textarea placeholder=" Ваше сообщение..." />
         </form>
-
+        </Fade>
     );
 }
 
