@@ -9,9 +9,12 @@ import Fade from 'react-reveal/Slide';
 function Project(props) {
     return (
         <div className={styles.project}>
-            <a href={props.link}>
+            <a href={props.project.link}>
                 <div className={styles.imageWrapper}>
                     <div className={`${styles.image}`} style={{backgroundImage: `url(${props.project.image})`}}>
+                    </div>
+                    <div className={styles.button}>
+                        Смотреть
                     </div>
                 </div>
             </a>

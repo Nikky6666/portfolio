@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Main.module.css';
 import Typist from 'react-typist';
+import photoMe from '../assets/Photo/me.jpg'
 
 function Main() {
     return (
@@ -18,7 +19,7 @@ function Main() {
                             </h1>
                 </div>
                 <div className={styles.photo}>
-                    <div className={styles.image}></div>
+                    <div className={styles.image} style={{backgroundImage: `url(${photoMe})`}}></div>
                 </div>
             </div>
         </div>
