@@ -22,6 +22,10 @@ function Project(props) {
             <div className={styles.description}>
                 {props.project.description}
             </div>
+            {props.project.authorization&&<div>
+                Зарегестрируйся по адресу <a href='https://social-network.samuraijs.com/'>social-network.samuraijs.com/</a>,
+                чтобы протестировать,
+            </div>}
         </div>
     )
 }
@@ -31,9 +35,10 @@ function Projects() {
         {
             name: "Web-site",
             image: photoWebSite,
-            description: "Социальная сеть. Зарегистрируйся с друзьями и весело проводи время",
+            description: "Социальная сеть. Приводи друзей и весело проводи время. ",
             style: styles.imgWeb,
-            link: "https://nikky6666.github.io/Web-site/"
+            link: "https://nikky6666.github.io/Web-site/",
+            authorization: true
         },
         {
             name: "To do list",
@@ -41,17 +46,19 @@ function Projects() {
             description: "Todolist — это простой список дел или список задач. Запиши в него все свои важные дела, чтобы не забыть. «Список дел» " +
                 "позволит вам эффективно организовать свое рабочее время.",
             style: styles.impTDL,
-            link: "https://nikky6666.github.io/toDoList/"
+            link: "https://nikky6666.github.io/toDoList/",
+            authorization: true
         },
         {
             name: "Counter",
             image: photoCounter,
             description: "Простой счетчик, в котором вы можете задать свои начальные значения.",
             style: styles.imgCoun,
-            link: "https://nikky6666.github.io/Counter/"
-        },
+            link: "https://nikky6666.github.io/Counter/",
+            authorization: false
+        }
     ];
-    const projectsElements = projects.map(p => <Project project={p}/>);
+    const projectsElements = projects.map(p => <Project project={p} />);
     return (
         <div id="projects" className={styles.projects}>
             <div className={styles.container}>

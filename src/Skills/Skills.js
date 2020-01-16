@@ -4,6 +4,8 @@ import HeaderTitle from "../Common/HeaderTitle/HeaderTitle";
 import reactPhoto from "../assets/Photo/react.png"
 import jsPhoto from "../assets/Photo/js.png"
 import htmlCss from "../assets/Photo/htmlCss.png"
+import typescript from "../assets/Photo/typescript.png"
+import git from "../assets/Photo/git.png"
 import Fade from 'react-reveal/Fade';
 
 function Skill(props) {
@@ -39,6 +41,20 @@ function Skills() {
             description: "HTML – это язык гипертекстовой разметки страницы, это стандарт разметки страниц для интернета, считывая этот язык браузеры интерпретируют его и отображают уже как сформированный документ." +
                 "CSS – это каскадные таблицы стилей, это язык который направлен на описание внешнего вида документа, написанного на языке гипертекстовой разметки то есть html.",
             style: styles.html
+        },
+        {
+            photo: typescript,
+            name: "TypeScript",
+            description: " TypeScript является строго типизированным, объектно-ориентированным, компилируемым языком программирования. " +
+                "TypeScript применяет базовые свойства языка спецификации ECMAScript5, то есть официальной спецификации JavaScript. В настоящее время это — ведущий язык из тех, которые компилируются в JavaScript.",
+            style: styles.typescript
+        },
+        {
+            photo: git,
+            name: "GIT",
+            description: "GIT — это одна из самых известных систем контроля версий с открытым исходным кодом, на которую полагаются миллионы проектов по всем миру (включая как коммерческие, так и бесплатные проекты). " +
+                "GIT — это полностью бесплатное программное обеспечение, поддерживающее множество ОС, таких как Mac, Linux, Windows и Solaris. ",
+            style: styles.git
         },
     ];
 

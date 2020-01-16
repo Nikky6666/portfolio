@@ -62,6 +62,18 @@
     text-shadow: -65px 25px 5px palegoldenrod, 65px -25px 5px lightblue;
     color: white;
 }
+
+.project div:last-child a{
+    text-decoration: none;
+    color: #f5baf4;
+    padding: 0 5px;
+    transition: all 1s;
+}
+.project div:last-child a:hover{
+    background-color: palegoldenrod;
+    color: darkblue;
+    border-radius: 15px;
+}
 .imageWrapper{
   /*  border: 5px solid red;*/
     width: 250px;
